@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Flow+Circular&family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Martel Sans", serif;
+}
+
+body{
+    background-color: #121212;
+    color: #fff;
+}
+
+.border{
+    border: 1px solid red;
+    margin: 3px;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.flex{
+    display: flex;
+}
+.bg-black{
+    background-color: #000;
+    color: #fff;
+}
+
+.invert{
+    filter: invert(1);
+}
+
+.bg-gray{
+    background-color: #121212;
+}
+@media (min-width: 700px){
+    .rounded{
+        border-radius: 10px;
+    }
+}
+
+@media (min-width: 1480px){
+    .m1{
+        margin: 5px;
+    }
+}
+
+.g1{
+    gap: 5px;
+}
+
+.g2{
+    gap: 20px;
+}
+
+.p1{
+    padding: 10px;
+}
+
+.pt-5{
+    padding-top: 5px;
+}
+
+.hover-underline{
+    cursor: pointer;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+/* WebKit Browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+    width: 8px; /* Thin scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #121212; /* Dark background */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2a2a2a; /* Blended dark gray */
+    border-radius: 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #444; /* Slightly lighter gray for better visibility */
+}
+
+/* Firefox Scrollbar */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #2a2a2a #121212;
+}
+
+.hidden{
+    display: none;
+}

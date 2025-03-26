@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saranshify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utility.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="icon" href="logos/favicon.svg" type="image/svg+xml">
+  </head>
+  <body>
+    <div class="container flex bg-black">
+      <div class="left">
+        <div class="home rounded bg-gray g2 p1">
+          <div class="flex align-center g1 justify-between">
+            <div class="flex align-center g2">
+            <img class="invert pointer" style="width: 50px;" src="logos/logo.svg" alt="logo" />
+            <span class="pointer">Saranshify</span>
+          </div>
+            <img class="close pointer" src="logos/close.svg" alt="close" />
+          </div>
+          <ul>
+            <li><img class="invert" src="logos/home.svg" alt="home"/> <span>Home</span></li>
+            <li><img class="invert" src="logos/search.svg" alt="search" /> <span>Search</span></li>
+          </ul>
+        </div>
+        <div class="library bg-gray rounded p1">
+          <div class="library-body">
+          <div class="flex align-center g1">
+            <div class="flex align-center g2">  
+              <img src="logos/playlist.svg" alt="playlist" />
+              <span class="pt-5 pointer">Your Library</span>
+          
+            </div>
+            
+            <img class="space" src="logos/minus.svg" alt="minus" />
+            
+          </div>
+          <div class="song-list">
+            <ul>
+            </ul>
+           </div>
+          </div>
+          <div class="footer">
+            <a href="https://www.spotify.com/au/legal/"> <span>Legal</span></a>
+            <a href="https://www.spotify.com/au/safetyandprivacy/"><span>Safety &amp; Privacy Center</span></a>
+            <a href="https://www.spotify.com/au/legal/privacy-policy/"><span>Privacy Policy</span></a>
+            <a href="https://www.spotify.com/au/legal/cookies-policy/"><span>Cookies</span></a>
+            <a href="https://www.spotify.com/au/legal/privacy-policy/#s3"><span>About Ads</span></a>
+            <a href="https://www.spotify.com/au/accessibility/"><span>Accessibility</span></a>
+        </div>
+        </div>
+      </div>
+      <div class="right rounded m1 bg-gray">
+        <div class="header">
+            <div class="nav">
+           
+                <img class="hamburger pointer" src="logos/hamburger.svg" alt="hamburger" />
+                
+              
+                <img width="20" height="20" src="https://img.icons8.com/ios/50/back--v1.png" alt="back--v1"/>
+                <img width="20" height="20" src="https://img.icons8.com/ios/50/forward--v1.png" alt="forward--v1"/>
+              
+            </div>
+            
+            <div class="search">
+              <img class="pointer search-icon2" src="logos/search.svg" alt="search" />
+              <input class="search-input" type="text" placeholder="Search for an artist, album, or song" />
+              <div class="cart">
+              <span>|</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="pointer">
+                <path d="M15 15.5c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2z"></path>
+                <path d="M1.513 9.37A1 1 0 0 1 2.291 9h19.418a1 1 0 0 1 .979 1.208l-2.339 11a1 1 0 0 1-.978.792H4.63a1 1 0 0 1-.978-.792l-2.339-11a1 1 0 0 1 .201-.837zM3.525 11l1.913 9h13.123l1.913-9H3.525zM4 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v4h-2V3H6v3H4V2z"></path>
+              </svg>
+              </div>
+            </div>
+            <div class="btn-search">
+            <div class="search-container">
+              <img class="pointer search-icon3" src="logos/search.svg" alt="search" />
+              </div>
+            <div class="buttons">
+                <button>Sign up</button>
+                <button>Log in</button>
+            </div>
+          </div>
+        </div>
+        <div class="playlist">
+            <h1>Saranshify Playlist</h1>
+            <div class="card-container">
+            </div>
+          </div>
+          <div class="playbar">
+            <div class="seekbar">
+              <div class="circle">
+              </div>
+            </div>
+            <div class="song-details">
+            <div class="song-info">
+            </div>
+           <div class="songbuttons">
+            <img id="prev" src="logos/prev-song.svg" alt="prev-song" />
+            <img id="play" src="logos/play.svg" alt="play" />
+            <img id="next" src="logos/next-song.svg" alt="next-song" />
+           </div> 
+           <div class="song-time-vol">
+           <div class="song-time">
+           </div>
+           <div class="volume-container">
+           <div class="volume">
+            <img src="logos/volume.svg" alt="volume" />
+            <div class="range">
+              <input type="range" class="range-input" name="volume" id="volume"/>
+            </div>
+           </div>
+           </div>
+           </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   <script src="js/script.js"></script>
+  </body>
+</html>
